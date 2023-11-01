@@ -1,0 +1,37 @@
+.full-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 330px;
+}
+
+.item {
+    background: lightskyblue;
+    padding: 10px 20px;
+    text-align: justify;
+    
+}
+
+.title {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-in-out;
+}
+
+.item.open .content {
+    max-height: 9999px; /* Adjust as needed */
+    transition: max-height 0.1s ease-in-out;
+}
